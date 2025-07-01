@@ -236,7 +236,7 @@ function TopGroup(props) {
       {/* 置顶推荐文章 */}
       <div
         id='top-group'
-        className='w-full flex space-x-3 xl:space-x-0 xl:grid xl:grid-cols-3 xl:gap-3 xl:h-[342px]'>
+        className='w-full flex space-x-3 xl:space-x-0 xl:grid xl:grid-cols-3 xl:gap-3 xl:h-[302px]'>
         {topPosts?.map((p, index) => {
           return (
             <Link href={`${siteConfig('SUB_PATH', '')}/${p?.slug}`} key={index}>
@@ -359,7 +359,7 @@ function TodayCard({ cRef, siteInfo }) {
       } overflow-hidden absolute hidden xl:flex flex-1 flex-col h-full top-0 w-full`}>
       <div
         id='card-body'
-        onClick={handleCardClick}
+        // onClick={handleCardClick}
         className={`${
           isCoverUp
             ? 'opacity-100 cursor-pointer'
@@ -398,6 +398,7 @@ function TodayCard({ cRef, siteInfo }) {
         <img
           src={siteInfo?.pageCover}
           id='today-card-cover'
+          alt='今日卡片封面'
           className={`${
             isCoverUp ? '' : ' pointer-events-none'
           } hover:scale-110 duration-1000 object-cover cursor-pointer today-card-cover absolute w-full h-full top-0`}
