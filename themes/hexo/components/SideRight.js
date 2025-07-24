@@ -64,10 +64,10 @@ export default function SideRight(props) {
           </Card>
         )}
 
-        <InfoCard {...props} />
+        {/* <InfoCard {...props} />
         {siteConfig('HEXO_WIDGET_ANALYTICS', null, CONFIG) && (
           <AnalyticsCard {...props} />
-        )}
+        )} */}
 
         {showCategory && (
           <Card>
